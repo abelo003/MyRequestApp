@@ -27,11 +27,14 @@ $(function () {
 
     modalConfirm(function (confirm) {
         if (confirm) {
-            //Acciones si el usuario confirma
-            alert("Oh Yeha!!!");
+            $("#bgRespuesta").css("display", "block");
+            $(".container-fluid").css("display", "none");
+            var video = document.getElementById("myVideo");
+            if (video.paused) {
+                video.play();
+            }
         } else {
-            //Acciones si el usuario no confirma
-            alert("No");
+            alert("Respetaré tu respuesta ;)");
         }
     });
 });

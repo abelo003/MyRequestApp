@@ -13,41 +13,41 @@ body{
     padding-top: 0px !important; 
 }
 .container-fluid {
-     padding-right: 0px; 
-     padding-left: 0px; 
+    padding-right: 0px; 
+    padding-left: 0px; 
 }
 
 .gal-container{
-	padding: 12px;
+    padding: 12px;
 }
 .gal-item{
-	overflow: hidden;
-	padding: 3px;
+    overflow: hidden;
+    padding: 3px;
 }
 .gal-item .box{
-	height: 350px;
-	overflow: hidden;
+    height: 350px;
+    overflow: hidden;
 }
 .box img{
-	height: 100%;
-	width: 100%;
-	object-fit:cover;
-	-o-object-fit:cover;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    -o-object-fit:cover;
 }
 .gal-item a:focus{
-	outline: none;
+    outline: none;
 }
 .gal-item a:after{
-	content:"\e003";
-	font-family: 'Glyphicons Halflings';
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
-	right: 3px;
-	left: 3px;
-	top: 3px;
-	bottom: 3px;
-	text-align: center;
+    content:"\e003";
+    font-family: 'Glyphicons Halflings';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 3px;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+    text-align: center;
     line-height: 350px;
     font-size: 30px;
     color: #fff;
@@ -56,13 +56,13 @@ body{
     transition: all 0.5s ease-in-out 0s;
 }
 .gal-item a:hover:after{
-	opacity: 1;
+    opacity: 1;
 }
 .modal-open .gal-container .modal{
-	background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.4);
 }
 .modal-open .gal-item .modal-body{
-	padding: 0px;
+    padding: 0px;
 }
 .modal-open .gal-item button.close{
     position: absolute;
@@ -79,34 +79,34 @@ body{
     border: 2px solid #fff;
     line-height: 25px;
     -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
-	box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
 }
 .modal-open .gal-item button.close:focus{
-	outline: none;
+    outline: none;
 }
 .modal-open .gal-item button.close span{
-	position: relative;
-	top: -3px;
-	font-weight: lighter;
-	text-shadow:none;
+    position: relative;
+    top: -3px;
+    font-weight: lighter;
+    text-shadow:none;
 }
 .gal-container .modal-dialogue{
-	width: 80%;
+    width: 80%;
 }
 .gal-container .description{
-	position: relative;
-	height: 40px;
-	top: -40px;
-	padding: 10px 25px;
-	background-color: rgba(0,0,0,0.5);
-	color: #fff;
-	text-align: left;
+    position: relative;
+    height: 40px;
+    top: -40px;
+    padding: 10px 25px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: left;
 }
 .gal-container .description h4{
-	margin:0px;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 20px;
+    margin:0px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
 }
 .gal-container .modal.fade .modal-dialog {
     -webkit-transform: scale(0.1);
@@ -130,10 +130,10 @@ body{
     opacity: 1;
 }
 @media (min-width: 768px) {
-.gal-container .modal-dialog {
-    width: 55%;
-    margin: 50 auto;
-}
+    .gal-container .modal-dialog {
+        width: 55%;
+        margin: 50 auto;
+    }
 }
 @media (max-width: 768px) {
     .gal-container .modal-content{
@@ -161,4 +161,76 @@ footer a,footer a:hover{
 
 .h5, h5 {
     font-size: 1.25rem;
+}
+
+/**Pregunta final**/
+.bgimg-1 {
+    /*background-image: url(https://www.w3schools.com/howto/img_parallax.jpg);*/
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+
+    width: 100%;
+    z-index: 9999;
+    top: 0px;
+    position: absolute !important;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.99;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/**video*/
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
 }
