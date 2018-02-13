@@ -12,6 +12,7 @@
         <link href="css/carousel.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/examples/carousel/carousel.css">
     </head>
 
     <body ng-controller="InicioController">
@@ -59,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <!--Termina carrusel -->
@@ -69,24 +70,18 @@
                 <!-- Three columns of text below the carousel -->
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <img class="rounded-circle" src="images/miniatura/rostro1.png" alt="Generic placeholder image" width="140" height="140">
                         <h2>Caso 1</h2>
                         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                        <label>{{archivoActual.nombre}}</label>
-                        <p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPrueba">
-                                Launch demo modal
-                            </button>
-                        </p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <img class="rounded-circle" src="images/miniatura/rostro2.jpg" alt="Generic placeholder image" width="140" height="140">
                         <h2>Caso 2</h2>
                         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                        <img class="rounded-circle" src="images/miniatura/rostro3.jpg" alt="Generic placeholder image" width="140" height="140">
                         <h2>Caso 3</h2>
                         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
@@ -136,7 +131,7 @@
                 <!-- /END THE FEATURETTES -->
 
             </div><!-- /.container marketing-->
-            
+
             <!--Inicia collage de fotos-->
             <section>
                 <div class="container gal-container">
@@ -464,34 +459,30 @@
             </section>
             <!--Termina collage de fotos-->
             <!-- Modal de pregunta-->
-            <div class="modal fade" id="modalPrueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalPregunta">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <h3 class="modal-title">Modal title</h3>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <h4>Modal body text goes here.</h4>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="modal-btn-si">Oh yeah!!!</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modal-btn-no">No lo se</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!--Termina modal de pregunta.-->
-            <!-- FOOTER -->
-            <footer>
-                <p>© 2018, Abel Cruz · <a href="#">Love factory</a></p>
+            <footer style="padding-left: 100px;">
+                <p>© 2018, Abel Cruz Inc· Todos los derechos reservados 
+                    <a href="#" style="cursor: pointer; font-weight: bold;" data-toggle="modal" data-target="#modalPregunta" data-keyboard="false">{{archivoActual.nombre}} tiene una pregunta para ti damsel</a>
+                </p>
             </footer>
-            
+            <!-- FOOTER -->
         </div><!-- /.container -->
-
-
 
         <!-- Bootstrap core JavaScript
         ================================================== -->

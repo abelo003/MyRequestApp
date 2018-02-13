@@ -9,7 +9,9 @@ and open the template in the editor.
 */
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-
+body{
+    padding-top: 0px !important; 
+}
 .container-fluid {
      padding-right: 0px; 
      padding-left: 0px; 
@@ -153,3 +155,10 @@ footer a,footer a:hover{
     color: #88C425;
 }
 
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.h5, h5 {
+    font-size: 1.25rem;
+}
