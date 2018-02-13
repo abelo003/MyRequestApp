@@ -11,32 +11,31 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/safety.png">
         <link href="css/login.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
         <div class="container" >
             <div class="card card-container">
-                <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
                 <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
                 <p id="profile-name" class="profile-name-card"></p>
-                <form class="form-signin">
+                <form class="form-signin" action="index.html" id="form-signin">
                     <span id="reauth-email" class="reauth-email"></span>
-                    <input type="text" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Clave" required>
+                    <input type="text" name="inputEmail" id="inputEmail" class="form-control" placeholder="Usuario" required value="tatich">
+                    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Clave" required autofocus>
                     <button id="btn-Entrar" class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Entrar</button>
                 </form><!-- /form -->
-                <a href="#" class="forgot-password">
-                    Necesito una pista
-                </a>
-
+                <a href="#" data-toggle="popover" title="Pista" data-content="A veces me dices así, de cariño (por mi compexión) :)">¿Necesitas una pista?</a>
             </div><!-- /card-container -->
         </div><!-- /container -->
         <div id="particles-js">
             <canvas class="particles-js-canvas-el" width="1423" height="496" style="width: 100%; height: 100%;"></canvas>
         </div>
-        <!-- stats - count particles --> 
+        <!-- stats - count particles -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
         <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/login.js"></script>
     </body>
 </html>

@@ -4,6 +4,12 @@
  * and open the template in the editor.
  */
 
+$(function(){
+    $('.carousel').carousel({
+        interval: 10000
+    });
+});
+
 var myAngularApp = angular.module('MyRequestApp', ['ngRoute']).directive('test', function() {
 });
 
