@@ -98,20 +98,40 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4,
+.fade-carousel .slides .slide-5,
+.fade-carousel .slides .slide-6,
+.fade-carousel .slides .slide-7,
+.fade-carousel .slides .slide-8{
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../images/photo1.jpg); 
+  background-image: url(../images/carousel/creativa.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../images/photo2.jpg);
+  background-image: url(../images/carousel/carinosa.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(../images/photo3.jpg);
+  background-image: url(../images/carousel/aventura.jpg);
+}
+.fade-carousel .slides .slide-4 {
+  background-image: url(../images/carousel/disciplianada.jpg);
+}
+.fade-carousel .slides .slide-5 {
+  background-image: url(../images/carousel/ejercicio.jpg);
+}
+.fade-carousel .slides .slide-6 {
+  background-image: url(../images/carousel/femenina.jpg);
+}
+.fade-carousel .slides .slide-7 {
+  background-image: url(../images/carousel/inteligente.jpg);
+}
+.fade-carousel .slides .slide-8 {
+  background-image: url(../images/carousel/trabajadora.jpg);
 }
 
 /********************************/
