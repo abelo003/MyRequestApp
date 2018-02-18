@@ -29,10 +29,8 @@ $(function () {
         if (confirm) {
             $("#bgRespuesta").css("display", "block");
             $(".container-fluid").css("display", "none");
-            var video = document.getElementById("myVideo");
-            if (video.paused) {
-                video.play();
-            }
+            var videoSRCauto = "https://www.youtube.com/embed/iKzRIweSBLA" + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+            $("#frameVideo iframe").attr('src', videoSRCauto);
         } else {
             alert("Respetaré tu respuesta ;)");
         }
