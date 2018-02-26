@@ -6,7 +6,7 @@
 
 $(function () {
     $('.carousel').carousel({
-        interval: 5000
+        interval: 8000
     });
     $('#modalPregunta').modal({
         backdrop: 'static',
